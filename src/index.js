@@ -6,5 +6,6 @@ import { app } from "./app/app.js";
 
 console.log('Hello World!');
 console.log(parseInput('500', '2', '100', '600')); */
+import "./index.scss";
 import { app } from "./app/app.js";
 app();

@@ -27,5 +27,11 @@ npm i -D
     
 ## 
    ```
-    npx webpack-cli
+    npx webpack-cli 
    ``` 
+## import css
+npm i -D css-loader
+npm i -D style-loader
+
+## import scss
+npm i -D sass sass-loader
