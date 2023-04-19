@@ -1,0 +1,19 @@
+{
+  "name": "cc14-koff",
+  "version": "1.0.0",
+  "description": "My first dynamic website",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack",
+    "dev": "ls"
+  },
+  "author": "Issarapong",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  },
+  "devDependencies": {
+    "webpack": "^5.79.0",
+    "webpack-cli": "^5.0.1"
+  }
+}

@@ -1,6 +1,6 @@
 // Class => Generate Object
 
-class ComponentService {
+export class ComponentService {
     /*
 	{
 		priceInput : DOM-INPUT-1,

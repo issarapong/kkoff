@@ -1,7 +1,12 @@
+import { ComponentService } from '../services/component.service.js';
+import { ErrorService } from '../services/error.service.js';
+import { parseInput } from '../utils/parse-inputs.js';
+import { validateInputs } from '../utils/validate-inputs.js';
+
 // const q = document.getElementById('error');
 // console.log(q);
 
-const app = () => {
+export const app = () => {
     const componentService = new ComponentService();
     const errorService = new ErrorService();
 
@@ -25,4 +30,4 @@ const app = () => {
     componentService.onClick(calTotal); //*** */
 };
 
-app();
+//app();
