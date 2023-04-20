@@ -5,10 +5,14 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
 module.exports = {
     mode : "production",
-    entry : "./src/index.js",
+    entry : {
+        main : "./src/index.js",
+        vendor : './src/vendor.js'
+    },
     output : {
         path: path.resolve(__dirname, 'dist'),
-        filename : 'bundle.[hash].js',
+        filename : '[name].[hash].js',
+        assetModuleFilename: 'images/[hash][ext][query]', //แยก path รูปเข้า images/
     },
     module: {
         rules: [
