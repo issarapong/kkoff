@@ -11,7 +11,7 @@ const CssMinimizer = require("css-minimizer-webpack-plugin");
 // Import Our Module
 const commonConfig = require("./webpack.config");
 
-const devConfig = merge(commonConfig, {
+const prodConfig = merge(commonConfig, {
   mode: "production",
   output: {
     path: path.resolve(__dirname, "docs"),
@@ -37,9 +37,9 @@ const devConfig = merge(commonConfig, {
   plugins: [
     new MiniCssExtractPlugin(),
     new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({
+  /*  new HtmlWebpackPlugin({
       template: "./src/template/index.html",
-    }),
+    }), */
   ],
 
   optimization: {
@@ -48,7 +48,7 @@ const devConfig = merge(commonConfig, {
       new CssMinimizer(),
       new HtmlWebpackPlugin({
         template: "./src/template/index.html",
-        filename: "index.min.html",
+        filename: "index.html",
         minify: {
           removeAttributeQuotes: true,
           collapseWhitespace: true,
@@ -59,4 +59,4 @@ const devConfig = merge(commonConfig, {
   },
 });
 
-module.exports = devConfig;
+module.exports = prodConfig;
