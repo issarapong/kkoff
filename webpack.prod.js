@@ -14,7 +14,7 @@ const commonConfig = require("./webpack.config");
 const devConfig = merge(commonConfig, {
   mode: "production",
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "docs"),
     filename: "[name].[hash].js",
     assetModuleFilename: "image/[hash][ext][query]",
   },
