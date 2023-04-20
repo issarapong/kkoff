@@ -51,3 +51,11 @@ npm i -D clean-webpack-plugin // clean buld hash
 npm i -D html-loader //load images
 
 npm i -D webpack-dev-server // สร้าง server
+
+npm i -D webpack-merge // รวม object config dev /production
+
+npm i -D mini-css-extract-plugin
+
+npm i -D terser-webpack-pluginv
+
+npm i -D css-minimizer-webpack-plugin
